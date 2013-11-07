@@ -36,7 +36,7 @@ class Grove
   end
 
   #Removes all dead Orange trees from the Grove
-  def cut_dead_trees #double check this select statement
+  def cut_dead_trees 
     @tree_array = @tree_array.select{|tree| tree.perished==false}
     puts "Your #{"dead trees".red} have been removed"
   end
